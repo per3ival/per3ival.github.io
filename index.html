@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Economic Calendar</title>
+    <title>Economic Calendar & Live Currency Rates</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             margin: 0;
             background-color: #f0f0f0;
@@ -19,6 +20,8 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            width: 80%;
         }
         .link {
             margin-top: 20px;
@@ -36,6 +39,8 @@
     </style>
 </head>
 <body>
+
+    <!-- Economic Calendar Section -->
     <div class="container">
         <iframe src="https://sslecal2.investing.com?columns=exc_flags,exc_currency,exc_importance,exc_actual,exc_forecast,exc_previous&features=datepicker,timezone&countries=25,32,6,37,72,22,17,39,14,10,35,43,56,36,110,11,26,12,4,5&calType=week&timeZone=8&lang=1" width="650" height="467" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
         
@@ -50,5 +55,20 @@
             <a href="https://sslecal2.investing.com?columns=exc_flags,exc_currency,exc_importance,exc_actual,exc_forecast,exc_previous&features=datepicker,timezone&countries=25,32,6,37,72,22,17,39,14,10,35,43,56,36,110,11,26,12,4,5&calType=week&timeZone=8&lang=1" target="_blank">경제 지표 일정</a>
         </div>
     </div>
+
+    <!-- Live Currency Rates Section -->
+    <div class="container">
+        <iframe src="https://www.widgets.investing.com/live-currency-cross-rates?theme=darkTheme" width="100%" height="400" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
+        
+        <div class="poweredBy" style="font-family: Arial, Helvetica, sans-serif;">
+            Powered by <a href="https://www.investing.com?utm_source=WMT&amp;utm_medium=referral&amp;utm_campaign=LIVE_CURRENCY_X_RATES&amp;utm_content=Footer%20Link" target="_blank" rel="nofollow">Investing.com</a>
+        </div>
+        
+        <div class="link">
+            <a href="https://www.widgets.investing.com/live-currency-cross-rates?theme=darkTheme" target="_blank">실시간 환율</a>
+        </div>
+    </div>
+
 </body>
 </html>
+
